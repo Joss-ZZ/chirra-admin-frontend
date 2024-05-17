@@ -1,35 +1,265 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import DefaultLayout from "./layout/DefaultLayout";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <DefaultLayout>
+      <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+        <div className="grid grid-cols-3 gap-4 mb-4">
+          <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
+          <p className="text-2xl text-gray-400 dark:text-gray-500">
+            <svg
+              className="w-3.5 h-3.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 1v16M1 9h16"
+              />
+            </svg>
+          </p>
+        </div>
+        <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
+          <p className="text-2xl text-gray-400 dark:text-gray-500">
+            <svg
+              className="w-3.5 h-3.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 1v16M1 9h16"
+              />
+            </svg>
+          </p>
+        </div>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+          <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500">
+              <svg
+                className="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 1v16M1 9h16"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </DefaultLayout>
+  );
 }
 
-export default App
+export default App;
