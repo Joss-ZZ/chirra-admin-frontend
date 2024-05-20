@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ColDef, GridApi } from "ag-grid-community";
 import CustomAgGrid from "../generic/AgGridCustom";
 import { Toast } from "../../utils/toast";

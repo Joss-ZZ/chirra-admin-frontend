@@ -20,8 +20,6 @@ export const ProductForm: FC<Props> = ({ setShowModal, product }) => {
     register,
     handleSubmit,
     reset,
-    getValues,
-    setValue,
     formState: { errors },
   } = useForm<ProductForm>({ defaultValues: product });
 

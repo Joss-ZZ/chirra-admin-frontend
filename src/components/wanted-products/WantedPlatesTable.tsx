@@ -1,4 +1,4 @@
-import { FC, useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { Toast } from "../../utils/toast";
 import * as XLSX from "xlsx";
@@ -63,7 +63,7 @@ export const WantedPlatesTable = () => {
     if (plates.length === 0) return Toast.error("No se han encontrado placas a registrar");
     const toastId = Toast.loading("Registrando Placas");
     try {
-      const response = await wantedPlatesApi.create({plates});
+      await wantedPlatesApi.create({plates});
       Toast.success("Placas registradas correctamente");
     } catch (error) {
       Toast.loading("Ha ocurrido un error al registrar las placas");
