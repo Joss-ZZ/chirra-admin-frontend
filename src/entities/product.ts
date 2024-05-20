@@ -5,5 +5,5 @@ export interface Product {
   price: number;
   description: string;
   contactNumber: number;
-  images: ProductsImage[];
+  images: ProductsImage[] | FileList;
 }

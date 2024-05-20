@@ -14,8 +14,8 @@ export const UpdateOrCreateProductModal: FC<PropsWithChildren<Props>> = ({
   id,
 }) => {
   return (
-    <Modal show={show} onClose={() => setShow(false)}>
-      <Modal.Header>{`${id ? "Actualizar" : "Crear"} producto`}</Modal.Header>
+    <Modal size={"5xl"} show={show} onClose={() => setShow(false)}>
+      <Modal.Header className="p-5">{`${id ? "Actualizar" : "Crear"} producto`}</Modal.Header>
       <Modal.Body>
         <div className="space-y-6">{children}</div>
       </Modal.Body>

@@ -4,8 +4,9 @@ import CustomAgGrid from "../generic/AgGridCustom";
 import { Toast } from "../../utils/toast";
 import { Product } from "../../entities";
 import { UpdateOrCreateProductModal } from "./UpdateOrCreateProductModal";
-import { ProductForm } from "./ProductForm";
+import { ProductForm, productFormDataSubject } from "./ProductForm";
 import { producApi } from "../../api";
+import { Subscription } from "rxjs";
 
 export const ProductsTable = () => {
   const [showModal, setShowModal] = useState(false);
@@ -14,6 +15,8 @@ export const ProductsTable = () => {
   const paginationPageSizeSelector = [10, 20, 50, 100];
   const [rowData, setRowData] = useState<any[]>();
   const [gridApi, setGridApi] = useState<GridApi | null>(null);
+
+  const subscription = new Subscription();
 
   const columns: ColDef[] = [
     {
@@ -56,10 +59,19 @@ export const ProductsTable = () => {
   }
 
   useEffect(() => {
+    subscription.add(productFormDataSubject.subscribe((_) => {
+      if (_)
+        searchReports();
+    }));
     if (gridApi) {
       setRowData([]);
-    }
+    };
     fetchData();
+    return () => {
+      if (subscription) {
+        subscription.unsubscribe();
+      }
+    };
   }, [gridApi]);
 
   return (
