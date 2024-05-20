@@ -13,24 +13,35 @@ import { WantedPlatesPage } from "./pages/WantedPlatesPage";
 
 export const Router = () => {
   const { isAuthenticated, isLoadingAuth } = useAuth();
-  const router = createBrowserRouter([
-    {
-      path: "/sign-in",
-      element: isAuthenticated ? <Navigate to="/" /> : <SignIn />,
-    },
-    {
-      path: "/",
-      element: !isAuthenticated ? <Navigate to="/sign-in" /> : <Home />,
-    },
-    {
-      path: "/products",
-      element: !isAuthenticated ? <Navigate to="/sign-in" /> : <ProductsPage />,
-    },
-    {
-      path: "/wanted-plates",
-      element: !isAuthenticated ? <Navigate to="/sign-in" /> : <WantedPlatesPage />,
-    },
-  ], { basename: "/chirra-admin-frontend" });
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/sign-in",
+        element: isAuthenticated ? <Navigate to="/" /> : <SignIn />,
+      },
+      {
+        path: "/",
+        element: !isAuthenticated ? <Navigate to="/sign-in" /> : <Home />,
+      },
+      {
+        path: "/products",
+        element: !isAuthenticated ? (
+          <Navigate to="/sign-in" />
+        ) : (
+          <ProductsPage />
+        ),
+      },
+      {
+        path: "/wanted-plates",
+        element: !isAuthenticated ? (
+          <Navigate to="/sign-in" />
+        ) : (
+          <WantedPlatesPage />
+        ),
+      },
+    ],
+    { basename: "/chirra-admin-frontend" }
+  );
   return (
     <>
       {isLoadingAuth ? (
