@@ -30,7 +30,7 @@ export const Router = () => {
       path: "/wanted-plates",
       element: !isAuthenticated ? <Navigate to="/sign-in" /> : <WantedPlatesPage />,
     },
-  ]);
+  ], { basename: "/chirra-admin-frontend" });
   return (
     <>
       {isLoadingAuth ? (
